@@ -20,28 +20,20 @@
      <script type="text/javascript">
           function initialize() {
           
-            var myLatlng = new google.maps.LatLng(43.63720,-79.39439);
-            var myLatlng2 = new google.maps.LatLng(43.63066,-79.41545);
-            var myLatlng3 = new google.maps.LatLng(43.63545,-79.40317);
+            var myLatlng = new google.maps.LatLng(22.39241,114.20849);
 
             var mapOptions = {
-              center: myLatlng3,
+              center: myLatlng,
               zoom: 13,
               mapTypeId: google.maps.MapTypeId.ROADMAP
             };
             var map = new google.maps.Map(document.getElementById("map-canvas"),
                 mapOptions);
                 
-            var marker1 = new google.maps.Marker({
+            var marker = new google.maps.Marker({
                 position: myLatlng,
                 map: map,
-                title: 'Toronto Music Garden'
-            });
-            
-            var marker2 = new google.maps.Marker({
-                position: myLatlng2,
-                map: map,
-                title: 'Atlantis Pavilions'
+                title: 'Club One'
             });
 
           }
@@ -147,13 +139,10 @@
     <div class="container">
       <div class="row featurette">
         <div class="col-md-7">
-          <h2 class="featurette-heading">Ceremony</h2>
-          <p class="lead">June 7, 2013 | 2:00 pm</p>
-          <p class="lead">Toronto Music Garden<br>479 Queens Quay W, Toronto, ON</p>
-          <p>&nbsp;</p>
           <h2 class="featurette-heading">Reception</h2>
-          <p class="lead">June 7, 2013 | 6:00 pm</p>
-          <p class="lead">Atlantis Pavilions<br>955 Lake Shore Blvd W, Toronto, ON, M6K 3B9</p>
+          <p class="lead">June 28, 2013 | 6:00 pm</p>
+          <p class="lead">Club One<br>1 On Ping Street, Sha Tin, Hong Kong</p>
+          <p>&nbsp;</p>
           <div id="map-canvas" class="google-map-canvas"></div>
         </div>
         <div class="col-md-5">
