@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="shortcut icon" href="bootstrap/assets/ico/favicon.png">
+
+    <title>Toronto Wedding - Andres & Jessica</title>
+    
+     <style type="text/css">
+      html { height: 100% }
+      body { height: 100%; margin: 0; padding: 0 }
+      #map-canvas { width: 80%; height: 300px }
+    </style>
+     <script type="text/javascript"
+          src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDLdPGusu44Y6hfFbXEzbwYdW2bN0r2cO0&sensor=false">
+     </script>
+     <script type="text/javascript">
+          function initialize() {
+          
+            var myLatlng = new google.maps.LatLng(43.63720,-79.39439);
+
+            var mapOptions = {
+              center: myLatlng,
+              zoom: 13,
+              mapTypeId: google.maps.MapTypeId.ROADMAP
+            };
+            var map = new google.maps.Map(document.getElementById("map-canvas"),
+                mapOptions);
+                
+            var marker = new google.maps.Marker({
+                position: myLatlng,
+                map: map,
+                title: 'Toronto Music Garden'
+            });
+
+          }
+          
+          google.maps.event.addDomListener(window, 'load', initialize);
+     </script>
+
+    <!-- Bootstrap core CSS -->
+    <link href="bootstrap/dist/css/bootstrap.css" rel="stylesheet">
+    <link href="style.css" rel="stylesheet">
+
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="bootstrap/assets/js/html5shiv.js"></script>
+      <script src="bootstrap/assets/js/respond.min.js"></script>
+    <![endif]-->
+
+    <!-- Custom styles for this template -->
+    <link href="carousel.css" rel="stylesheet">
+  </head>
+<!-- NAVBAR
+================================================== -->
+  <body>
+    <div class="navbar-wrapper">
+      <div class="container">
+
+        <div class="navbar navbar-inverse navbar-static-top">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              <a class="navbar-brand" href="#">Andres & Jessica</a>
+            </div>
+            <div class="navbar-collapse collapse">
+              <ul class="nav navbar-nav">
+                <li class="active"><a href="#">Home</a></li>
+                <li><a href="#story">Our Story</a></li>
+                <li><a href="#weddings" class="dropdown-toggle" data-toggle="dropdown">Our Weddings<b class="caret"></b></a>
+                  <ul class="dropdown-menu">
+                    <li class="dropdown-header">Toronto</li>
+                    <li><a href="#TOceremony">Ceremony</a></li>
+                    <li><a href="#TOreception">Reception</a></li>
+                    <li class="divider"></li>
+                    <li class="dropdown-header">Venezuela</li>
+                    <li><a href="#CCSceremony">Ceremony</a></li>
+                    <li><a href="#CCSreception">Reception</a></li>
+                    <li class="divider"></li>
+                    <li class="dropdown-header">Hong Kong</li>
+                    <li><a href="#HKreception">Reception</a></li>
+                  </ul>
+                </li>
+                <li><a href="#photos">Our Photos</a></li>
+                <li><a href="#accomodation">Accomodation</a></li>
+                <li><a href="#rsvp">RSVP</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+    <!-- Carousel
+    ================================================== -->
+    <div class="container">
+    <div id="myCarousel" class="carousel slide">
+      <!-- Indicators -->
+      <ol class="carousel-indicators">
+        <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+        <li data-target="#myCarousel" data-slide-to="1"></li>
+        <li data-target="#myCarousel" data-slide-to="2"></li>
+      </ol>
+      <div class="carousel-inner">
+        <div class="item active">
+          <img src="images/ajwedding_slide1.png" data-src="images/ajwedding_slide1.png" alt="First slide">
+          <div class="container">
+            <div class="carousel-caption">
+              <h1>Andres & Jessica</h1>
+              <h3>Toronto - June 7, 2014</h3>
+              <p><a class="btn btn-large btn-primary" href="#TOgooglecanlendar">SAVE THE DATE!</a></p>
+            </div>
+          </div>
+        </div>
+        <div class="item">
+          <img src="data:image/png;base64," data-src="holder.js/100%x500/auto/#777:#7a7a7a/text:Second slide" alt="Second slide">
+          <div class="container">
+            <div class="carousel-caption">
+              <h1>Andres & Jessica</h1>
+              <h3>Venezuela - June 14, 2014</h3>
+              <p><a class="btn btn-large btn-primary" href="#CCSgooglecanlendar">SAVE THE DATE!</a></p>
+            </div>
+          </div>
+        </div>
+        <div class="item">
+          <img src="data:image/png;base64," data-src="holder.js/100%x500/auto/#777:#7a7a7a/text:Third slide" alt="Third slide">
+          <div class="container">
+            <div class="carousel-caption">
+              <h1>Andres & Jessica</h1>
+              <h3>Hong Kong - June 28, 2014</h3>
+              <p><a class="btn btn-large btn-primary" href="#HKgooglecanlendar">SAVE THE DATE!</a></p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <a class="left carousel-control" href="#myCarousel" data-slide="prev"><span class="glyphicon glyphicon-chevron-left"></span></a>
+      <a class="right carousel-control" href="#myCarousel" data-slide="next"><span class="glyphicon glyphicon-chevron-right"></span></a>
+    </div>
+    </div><!-- /.carousel -->
+    
+
+      <!-- START THE FEATURETTES -->
+    <div class="container">
+      <div class="row featurette">
+        <div class="col-md-7">
+          <h2 class="featurette-heading">Ceremony</h2>
+          <p class="lead">Date: June 7, 2013</p>
+          <p class="lead">Time: 2:00 pm</p>
+          <p class="lead">Address:<br>Toronto Music Garden<br>479 Queens Quay W<br>Toronto, ON<br>M6K 3B9</p>
+          <div id="map-canvas" class="google-map-canvas"></div>
+        </div>
+        <div class="col-md-5">
+          <img class="featurette-image img-responsive" src="images/engagement02.jpg" data-src="images/engagement02.jpg" alt="Andres & Jessica">
+        </div>      
+        <div class="col-md-7">
+          <h2 class="featurette-heading">Reception</h2>
+          <p class="lead">Date: June 7, 2013</p>
+          <p class="lead">Time: 6:00 pm</p>
+          <p class="lead">Address:<br>Atlantis Pavilions<br>955 Lake Shore Blvd W<br>Toronto, ON<br>M6K 3B9</p>
+        </div>
+        <div class="col-md-7">
+            <div id="map-canvas" class="google-map-canvas"></div>
+        </div>
+      </div>
+    </div>
+
+      <!-- /END THE FEATURETTES -->
+
+
+      <!-- FOOTER -->
+      <div class="container">
+      <footer>
+        <p class="pull-right"><a href="#">Back to top</a></p>
+        <p>&copy; 2014 Andres & Jessica &middot; <a href="#">Privacy</a> &middot; <a href="#">Terms</a></p>
+      </footer>
+      </div>
+
+    </div><!-- /.container -->
+
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="bootstrap/assets/js/jquery.js"></script>
+    <script src="bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="bootstrap/assets/js/holder.js"></script>
+  </body>
+</html>
