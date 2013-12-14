@@ -77,14 +77,14 @@ footer {
 }
 
 /* Center align the text within the three columns below the carousel */
-.marketing .col-lg-4 {
+.marketing .col-sm-4 {
   margin-bottom: 20px;
 }
 .marketing h2 {
   text-align: center;
   font-weight: normal;
 }
-.marketing .col-lg-4 p {
+.marketing .col-sm-4 p {
   margin-left: 20px;
   margin-right: 20px;
 }
