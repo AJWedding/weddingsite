@@ -3,10 +3,13 @@
 /* Padding below the footer and lighter body text */
 
 body {
-  padding-bottom: 40px;
+  padding-bottom: 20px;
   color: #5a5a5a;
 }
 
+footer {
+    padding-top: 150px;
+}
 
 
 /* CUSTOMIZE THE NAVBAR
@@ -78,15 +81,18 @@ body {
 
 /* Center align the text within the three columns below the carousel */
 .marketing .col-lg-4 {
-  text-align: center;
   margin-bottom: 20px;
 }
 .marketing h2 {
+  text-align: center;
   font-weight: normal;
 }
 .marketing .col-lg-4 p {
-  margin-left: 10px;
-  margin-right: 10px;
+  margin-left: 20px;
+  margin-right: 20px;
+}
+.marketing .centered {
+    text-align: center;
 }
 
 
@@ -104,6 +110,11 @@ body {
   letter-spacing: -1px;
 }
 
+/* Footer
+------------------------- */
+.footer-pad {
+    min-height: 100px;
+}
 
 
 /* RESPONSIVE CSS
