@@ -7,47 +7,7 @@
     <meta name="author" content="">
     <link rel="shortcut icon" href="bootstrap/assets/ico/favicon.png">
 
-    <title>Toronto Wedding - Andres & Jessica</title>
-    
-     <style type="text/css">
-      html { height: 100% }
-      body { height: 100%; margin: 0; padding: 0 }
-      #map-canvas { width: 80%; height: 300px }
-    </style>
-     <script type="text/javascript"
-          src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDLdPGusu44Y6hfFbXEzbwYdW2bN0r2cO0&sensor=false">
-     </script>
-     <script type="text/javascript">
-          function initialize() {
-          
-            var myLatlng = new google.maps.LatLng(43.63720,-79.39439);
-            var myLatlng2 = new google.maps.LatLng(43.63066,-79.41545);
-            var myLatlng3 = new google.maps.LatLng(43.63545,-79.40317);
-
-            var mapOptions = {
-              center: myLatlng3,
-              zoom: 13,
-              mapTypeId: google.maps.MapTypeId.ROADMAP
-            };
-            var map = new google.maps.Map(document.getElementById("map-canvas"),
-                mapOptions);
-                
-            var marker1 = new google.maps.Marker({
-                position: myLatlng,
-                map: map,
-                title: 'Toronto Music Garden'
-            });
-            
-            var marker2 = new google.maps.Marker({
-                position: myLatlng2,
-                map: map,
-                title: 'Atlantis Pavilions'
-            });
-
-          }
-          
-          google.maps.event.addDomListener(window, 'load', initialize);
-     </script>
+    <title>Engagement Photos - Andres & Jessica</title>
 
     <!-- Bootstrap core CSS -->
     <link href="bootstrap/dist/css/bootstrap.css" rel="stylesheet">
@@ -81,10 +41,10 @@
             <div class="navbar-collapse collapse">
               <ul class="nav navbar-nav">
                 <li><a href="index.html">Home</a></li>
-                <li class="active"><a href="#">Toronto</a></li>
+                <li><a href="#">Toronto</a></li>
                 <li><a href="venezuela.html">Venezuela</a></li>
                 <li><a href="hongkong.html">Hong Kong</a></li>
-                <li><a href="#photos">Our Photos</a></li>
+                <li class="active"><a href="#">Our Photos</a></li>
                 <li><a href="#accomodation">Accomodation</a></li>
                 <li><a href="#rsvp">RSVP</a></li>
               </ul>
